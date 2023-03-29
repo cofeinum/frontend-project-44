@@ -1,0 +1,6 @@
+.sass-cache
+/.sass-cache
+package-lock.json
+.gitconfig.local
+node_modules
+bower_components
