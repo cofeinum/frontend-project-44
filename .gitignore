@@ -3,4 +3,8 @@
 package-lock.json
 .gitconfig.local
 node_modules
+/node_modules/
 bower_components
+*.log
+coverage
+.DS_Store
