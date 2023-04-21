@@ -8,18 +8,27 @@
 Brain Games - is a console application written using JavaScript (Node.js), consisting of 5 built-in games:
 
 1. **Even** – player must answer whether the number is even.
+
 [![asciicast](https://asciinema.org/a/579044.svg)](https://asciinema.org/a/579044)
 
+
 2. **Calc** – player must calculate the result of the expression.
+
 [![asciicast](https://asciinema.org/a/579021.svg)](https://asciinema.org/a/579021)
 
+
 3. **Gcd** – player must find the greatest common divisor of numbers.
+
 [![asciicast](https://asciinema.org/a/579040.svg)](https://asciinema.org/a/579040)
 
+
 4. **Progression** – player must find the missing progression number.
+
 [![asciicast](https://asciinema.org/a/579123.svg)](https://asciinema.org/a/579123)
 
+
 5. **Prime** – player must determine if the number is prime.
+
 [![asciicast](https://asciinema.org/a/579143.svg)](https://asciinema.org/a/579143)
 
 ### Project structure
