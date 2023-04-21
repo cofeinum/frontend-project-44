@@ -2,11 +2,11 @@ import gameLogic from '../logic.js';
 import { getRandomNum, getRandomSign, calcResult } from '../tools.js';
 
 const generateRound = () => {
-  const randomNum1 = getRandomNum();
-  const randomNum2 = getRandomNum();
-  const randomSign = getRandomSign();
-  const question = `${randomNum1} ${randomSign} ${randomNum2}`;
-  const result = calcResult[randomSign](randomNum1, randomNum2).toString();
+  const num1 = getRandomNum();
+  const num2 = getRandomNum();
+  const sign = getRandomSign();
+  const question = `${num1} ${sign} ${num2}`;
+  const result = calcResult[sign](num1, num2).toString();
   return [question, result];
 };
 
