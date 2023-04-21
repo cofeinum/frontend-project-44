@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/ebb6a81b32efa6fb3252/maintainability)](https://codeclimate.com/github/cofeinum/frontend-project-44/maintainability)
 
 [![asciicast](https://asciinema.org/a/Yv3XM5Rozec0DOeXmF0rbbKcl.svg)](https://asciinema.org/a/Yv3XM5Rozec0DOeXmF0rbbKcl)
+
+[![asciicast](https://asciinema.org/a/9rX5T2OhpAFDu0IgsQ4Zlr37B.svg)](https://asciinema.org/a/9rX5T2OhpAFDu0IgsQ4Zlr37B)
