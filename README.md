@@ -16,4 +16,5 @@
 4. Progression
 [![asciicast](https://asciinema.org/a/579123.svg)](https://asciinema.org/a/579123)
 
-5.
+5. Prime
+[![asciicast](https://asciinema.org/a/579143.svg)](https://asciinema.org/a/579143)
