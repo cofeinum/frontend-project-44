@@ -18,7 +18,7 @@ const generateRound = () => {
   return [question, result];
 };
 
-const rulesText = 'Find the greatest common divisor of given numbers.';
+const rulesText = 'What number is missing in the progression?';
 
 const runGameProgression = () => gameLogic({ rulesText, generateRound });
 export default runGameProgression;
