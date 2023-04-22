@@ -14,7 +14,6 @@ const generateRound = () => {
     question += (i === unknownNumber) ? '.. ' : `${i} `;
   }
 
-  // const question = `${num1} ${num2}`;
   return [question, result];
 };
 
