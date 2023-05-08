@@ -31,5 +31,11 @@ Brain Games - is a console application written using JavaScript (Node.js), consi
 
 [![asciicast](https://asciinema.org/a/579143.svg)](https://asciinema.org/a/579143)
 
+### Setup
+1. [Install](https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md) the latest version of Node.js (app developed on version 18.15.0)
+2. Initialize your npm package inside the project's root directory using the command `npm init`.
+3. Run command `make install`
+4. Run command `brain-*game_name*` for start to play (game names: `even`, `calc`, `gcd`, `progression`, `prime`)
+
 ### Project structure
 Application can be started using short command (Use: brain-*game_name*). This command run file from the "bin" (bin/brain-*game_name*.js) directory. Executed file calls index.js file that contains menu with games selection from the "games" directory. Each game contains unique variable (game rules) and game round generating function. The general logic of all games is placed in "src" directory (src/logic.js).
