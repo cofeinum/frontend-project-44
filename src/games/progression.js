@@ -1,23 +1,37 @@
-import gameLogic from '../logic.js';
-import { getRandomNum } from '../tools.js';
+import gameLogic from '../index.js';
+import getRandomNum from '../tools.js';
+
+const createProgression = () => {
+  const minQuantityNumbers = 5;
+  const maxQuantityNumbers = 10;
+  const minIndexMissingNumber = 0;
+  const minAddedNumber = 2;
+  const maxAddedNumber = 10;
+  const minInitialNumber = 0;
+  const maxInitialNumber = 99;
+
+  const quantityNumbers = getRandomNum(minQuantityNumbers, maxQuantityNumbers);
+  const indexMissingNumber = getRandomNum(minIndexMissingNumber, quantityNumbers);
+  const addedNumber = getRandomNum(minAddedNumber, maxAddedNumber);
+  const initialNumber = getRandomNum(minInitialNumber, maxInitialNumber);
+  const finalNumber = initialNumber + addedNumber * quantityNumbers;
+
+  const progressionArr = [];
+  for (let i = initialNumber; i <= finalNumber; i += addedNumber) {
+    progressionArr.push(i);
+  }
+  const missingNumberStr = progressionArr[indexMissingNumber].toString();
+  progressionArr[indexMissingNumber] = '..';
+  const progressionStr = progressionArr.join(' ');
+
+  return [progressionStr, missingNumberStr];
+};
 
 const generateRound = () => {
-  const quantityNumbers = getRandomNum(5, 10);
-  const indexUnknownNumber = getRandomNum(5, quantityNumbers);
-  const add = getRandomNum(2, 10);
-  const start = getRandomNum(0, 99);
-  const unknownNumber = start + add * indexUnknownNumber;
-  const limit = start + add * quantityNumbers;
-  const result = unknownNumber.toString();
-  let question = '';
-  for (let i = start; i <= limit; i += add) {
-    question += (i === unknownNumber) ? '.. ' : `${i} `;
-  }
-
+  const [question, result] = createProgression();
   return [question, result];
 };
 
 const rulesText = 'What number is missing in the progression?';
 
-const runGameProgression = () => gameLogic({ rulesText, generateRound });
-export default runGameProgression;
+export default () => gameLogic({ rulesText, generateRound });

@@ -1,13 +1,14 @@
-import gameLogic from '../logic.js';
-import { getRandomNum } from '../tools.js';
+import gameLogic from '../index.js';
+import getRandomNum from '../tools.js';
+
+const isEven = (question) => (question % 2 ? 'no' : 'yes');
 
 const generateRound = () => {
   const question = getRandomNum();
-  const result = (question % 2 === 0) ? 'yes' : 'no';
+  const result = isEven(question);
   return [question, result];
 };
 
 const rulesText = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const runGameEven = () => gameLogic({ rulesText, generateRound });
-export default runGameEven;
+export default () => gameLogic({ rulesText, generateRound });

@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "0.1.0",
-  "description": "[![Actions Status](https://github.com/cofeinum/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/cofeinum/frontend-project-44/actions)",
+  "description": "Brain Games - is a console application written using JavaScript (Node.js), consisting of 5 built-in games.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

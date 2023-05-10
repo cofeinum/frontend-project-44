@@ -1,9 +1,7 @@
-import gameLogic from '../logic.js';
-import { getRandomNum } from '../tools.js';
+import gameLogic from '../index.js';
+import getRandomNum from '../tools.js';
 
-const generateRound = () => {
-  const num1 = getRandomNum();
-  const num2 = getRandomNum();
+const findGCD = (num1, num2) => {
   let result = num1 <= num2 ? num1 : num2;
   for (let i = result; i > 0; i -= 1) {
     if (num1 % i === 0 && num2 % i === 0) {
@@ -11,12 +9,18 @@ const generateRound = () => {
       break;
     }
   }
+  return result;
+};
 
-  const question = `${num1} ${num2}`;
+const generateRound = () => {
+  const givenNum1 = getRandomNum();
+  const givenNum2 = getRandomNum();
+
+  const result = findGCD(givenNum1, givenNum2);
+  const question = `${givenNum1} ${givenNum2}`;
   return [question, result];
 };
 
 const rulesText = 'Find the greatest common divisor of given numbers.';
 
-const runGameGcd = () => gameLogic({ rulesText, generateRound });
-export default runGameGcd;
+export default () => gameLogic({ rulesText, generateRound });
