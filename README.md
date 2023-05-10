@@ -36,4 +36,4 @@ Brain Games - is a console application written using JavaScript (Node.js), consi
 1. Install the latest version of Node.js (app developed on version 18.15.0)
 2. Installs packages and dependencies with the `npm install` command.
 3. Run command `make install`.
-4. Run command `brain-*game_name*` for start to play (game names: `even`, `calc`, `gcd`, `progression`, `prime`).
+4. Run command `brain-[game_name]` for start to play (game names: `even`, `calc`, `gcd`, `progression`, `prime`).
