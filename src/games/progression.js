@@ -34,4 +34,4 @@ const generateRound = () => {
 
 const rulesText = 'What number is missing in the progression?';
 
-export default () => gameLogic({ rulesText, generateRound });
+export default () => gameLogic(rulesText, generateRound);

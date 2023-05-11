@@ -23,4 +23,4 @@ const generateRound = () => {
 
 const rulesText = 'Find the greatest common divisor of given numbers.';
 
-export default () => gameLogic({ rulesText, generateRound });
+export default () => gameLogic(rulesText, generateRound);

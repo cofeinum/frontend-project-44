@@ -21,4 +21,4 @@ const generateRound = () => {
 
 const rulesText = 'What is the result of the expression?';
 
-export default () => gameLogic({ rulesText, generateRound });
+export default () => gameLogic(rulesText, generateRound);

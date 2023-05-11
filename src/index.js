@@ -8,12 +8,13 @@ const runGreeting = () => {
   return userName;
 };
 
-export default (gameData) => {
+export default (rulesText, generateRound) => {
   const userName = runGreeting();
-  console.log(gameData.rulesText);
+  const countRounds = 3;
+  console.log(rulesText);
 
-  for (let i = 0; i < 3; i += 1) {
-    const [question, result] = gameData.generateRound();
+  for (let i = 0; i < countRounds; i += 1) {
+    const [question, result] = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 

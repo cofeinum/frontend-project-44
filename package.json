@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "0.1.0",
   "description": "Brain Games - is a console application written using JavaScript (Node.js), consisting of 5 built-in games.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
